@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_exit"
+    app:startDestination="@id/exitScreenFragment_graph">
+
+    <fragment
+        android:id="@+id/exitScreenFragment_graph"
+        android:name="com.example.funPrimeTask.fragments.ExitFragment"
+        android:label="Exit Fragment"
+        tools:layout="@layout/fragment_exit">
+        <action
+            android:id="@+id/action_exitFragment_to_photosFragment_graph"
+            app:destination="@id/photosFragment"
+            >
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.example.funPrimeTask.fragments.PhotosFragment"
+        android:label="fragment_photos"
+        tools:layout="@layout/fragment_photos"/>
+
+</navigation>

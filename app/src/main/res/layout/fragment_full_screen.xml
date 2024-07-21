@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/full_screen_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/next"
+        android:layout_marginStart="@dimen/_108sdp"
+        android:layout_marginTop="@dimen/_63sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+
+    <TextView
+        android:id="@+id/title_text_view_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:background="#80000000"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_share"
+        android:contentDescription="@string/share_image" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container_main_full_screen"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_marginStart="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/placeholder_layout_for_shimmer_loading"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>

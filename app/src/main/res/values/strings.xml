@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Google Ads Implementation</string>
+    <string name="fun_prime_task">FunPrimeTask</string>
+    <string name="_5">5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share_image" />
+    <string name="exit">Exit</string>
+    <string name="go_back">Go Back</string>
+    <string name="next">Next</string>
+</resources>
